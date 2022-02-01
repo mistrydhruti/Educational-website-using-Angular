@@ -1,0 +1,69 @@
+<!--<nav>
+    <img src="/assets/images/logo.png">
+    <div class="search-box">
+        <input type="text" placeholder="Search">
+        <span class="fa fa-search"></span>
+    </div>
+
+</nav>-->
+<!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <img src="/assets/images/logo.png" height="28" alt="CoolBrand">
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+            <div class="navbar-nav">
+                <div class="nav-item dropdown">
+                    <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Languages</a>
+                    <div class="dropdown-menu">
+                        <a href="#" class="dropdown-item">Hindi</a>
+                        <a href="#" class="dropdown-item">English</a>
+                        <a href="#" class="dropdown-item">Marathi</a>
+                    </div>
+                </div>
+            </div>
+            <form class="d-flex">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search">
+                    <button type="button" class="btn btn-secondary"><i class="bi-search"></i></button>
+                </div>
+            </form>
+
+            <div class="navbar-nav ms-auto">
+                <a href="#" class="nav-item nav-link">Login</a>
+            </div>
+        </div>
+    </div>
+</nav>-->
+<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #f2ff7a ;">
+    <div class="container-fluid">
+        <a href="#" class="navbar-brand">
+            <img src="/assets/images/logo.png" height="45" alt="CoolBrand">
+
+        </a>
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav">
+                <a href="#" class="nav-item nav-link active">Home</a>
+                <select class="selectpicker" style="background-color: #f2ff7a;border:none;outline:none;" (change)="changeLang($any($event.target).value)">
+                    <option value="en" [selected]="lang == 'en'">English</option>
+                    <option value="de" [selected]="lang == 'de'">Deutsch</option>
+                    <option value="ar" [selected]="lang == 'ar'">Arabic</option>
+                  </select>
+            </div>
+
+            <form class="d-flex">
+                <div class="input-group">
+                    <input type="text" class="form-control" [(ngModel)]="searchTerm" (keyup)="search($event)" placeholder="Search">
+                    <button type="button" class="btn btn-secondary" style="background-color:#a52671;"><i class="fa fa-search"></i></button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</nav>

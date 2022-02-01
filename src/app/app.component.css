@@ -1,0 +1,23 @@
+.card {
+    margin: 0.5%;
+}
+
+.row {
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+
+.card-img-top {
+    margin-top: 3%;
+}
+
+.card-title {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: medium;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 100ch;
+    align-items: center;
+}

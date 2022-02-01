@@ -1,0 +1,15 @@
+<app-header></app-header>
+
+<div class="edu-cards">
+    <div class="row">
+
+        <ng-container *ngFor="let image of productList | filter:searchkey:'Name'">
+            <div class="card" style="width: 18rem;">
+                <img class="card-img-top" src="{{image.IconUrl}}" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">{{image.Name}}</h5>
+                </div>
+            </div>
+        </ng-container>
+    </div>
+</div>
